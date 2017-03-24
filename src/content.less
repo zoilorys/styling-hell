@@ -1,0 +1,85 @@
+#si_Layout_Info_border {
+    border: 1px solid @light-text;
+    background: #fff;
+    padding: 15px 20px 40px;
+    font-size: 14px;
+    color: @primary-text;
+
+    h6 {
+        font-size: 14px;
+    }
+
+
+    #si_Label_campaign_hierarchy_border {
+        font-size: 24px;
+    }
+
+    #si_AddImage {
+        margin: 10px 0;
+
+        & > p {
+            display: none;
+        }
+
+        .list_group {
+            padding: 0;
+            margin: 0;
+
+            li {
+                padding: 0;
+                margin: 0;
+
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    max-height: 250px;
+                }
+            }
+        }
+    }
+
+    #si_CampaignVlaue,
+    #si_AdvertisementText,
+    #si_DescriptionText {
+        line-height: 35px;
+    }
+
+    #si_BroadcastDurationStart,
+    #si_BroadcastDurationEnd {
+        line-height: 35px;
+
+        & > p {
+            display: none;
+        }
+
+        & > .list_group {
+            padding: 0;
+            margin: 0;
+
+            li {
+                padding: 0;
+                margin: 0;
+                color: @primary-text !important;
+            }
+        }
+    }
+
+    #si_ViewAnalysisButton {
+        button {
+            width: 240px;
+            height: 40px;
+            box-sizing: border-box;
+            border: 1px solid @light-text;
+            background-color: @dark-blue;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+    }
+
+    #si_Layout_Info {
+        .row:last-child {
+            margin-top: 20px !important;
+        }
+    }
+}

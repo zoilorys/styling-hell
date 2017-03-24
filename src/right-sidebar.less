@@ -1,0 +1,104 @@
+#si_ListValues {
+    & > p {
+        margin: 0 !important;
+    }
+
+    .list_group {
+        padding: 25px;
+        margin: 0;
+        li {
+            height: 90px;
+            margin-top: 10px;
+            padding: 15px;
+            width: 47%;
+            background-color: transparent !important;
+            border: 1px solid @light-text;
+            border-radius: 3px;
+            color: @primary-text !important;
+            transition: all .1s ease-in .05s;
+            font-family: 'Gesta-Regular' !important;
+            cursor: pointer;
+
+            &:nth-child(odd) {
+                margin-right: 3%;
+            }
+
+            &:hover {
+                border-color: @primary-text;
+                color: @dark-text !important;
+            }
+
+            &.active_element {
+                background-color: @pale-green !important;
+                color: #fff !important;
+            }
+
+            .node_count {
+                font-size: 34px;
+                line-height: 38px;
+                display: block;
+            }
+            .node_name {
+                font-size: 14px;
+                font-family: 'Gesta-Light';
+                display: block;
+            }
+        }
+    }
+}
+
+#si_Layout_Analysis_border {
+    width: 485px;
+    background-color: #fff;
+    border: 1px solid @light-text;
+    text-transform: uppercase;
+
+    #si_Layout_Analysis {
+        padding: 0 !important;
+
+        .dashboard-row-padding {
+            padding: 0 !important;
+            .col-md-12 {
+                padding: 0 !important;
+            }
+        }
+
+        #si_GridText {
+            margin-bottom: 15px;
+            section {
+                padding-left: 27px;
+                font-size: 18px;
+                color: @primary-text;
+            }
+        }
+
+        #si_GridLayout_Data_border,
+        #si_GridLayout2_Data_border {
+            padding: 0 27px;
+
+            #si_GridLayout_Data_grid,
+            #si_GridLayout2_Data_grid {
+                .slick-header {
+                    &,
+                    .slick-header-columns,
+                    .slick-header-column {
+                        background: none !important;
+                    }
+                    .slick-header-column {
+                        border-right: none;
+                        text-align: left;
+                        .slick-column-name {
+                            font-family: 'Gesta-Light' !important;
+                            color: @primary-text !important;
+                        }
+                        .slick-sort-indicator {
+                            position: absolute;
+                        }
+                    }
+                    border: none;
+                }
+
+            }
+        }
+    }
+}
