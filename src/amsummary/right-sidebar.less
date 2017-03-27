@@ -72,6 +72,18 @@
             }
         }
 
+        #si_SelectedMeasure {
+          font-size: 18px;
+          color: @primary-text;
+
+          &:before {
+            content: '_';
+            position: absolute;
+            top: -8px;
+            left: -38px;
+          }
+        }
+
         #si_GridLayout_Data_border,
         #si_GridLayout2_Data_border {
             padding: 0 27px;
@@ -96,6 +108,43 @@
                         }
                     }
                     border: none;
+                }
+
+                .slick-row {
+                  height: 60px;
+                  box-sizing: border-box;
+
+                  &:not(:last-child) {
+                    border-bottom: 1px dashed @primary-text;
+                  }
+
+                  &:hover {
+                    background-color: transparent;
+                  }
+
+                  .slick-cell {
+                    height: 60px;
+                    line-height: 60px;
+                    font-size: 20px;
+                    color: @primary-text;
+                    padding: 0;
+                    border: none;
+
+                    img {
+                      height: 55px !important;
+                      width: auto !important;
+                      vertical-align: baseline;
+                    }
+
+                    &.selected {
+                      border: none;
+                    }
+
+                    &.metric_value {
+                      font-size: 25px;
+                      color: @pale-green;
+                    }
+                  }
                 }
 
             }

@@ -8,8 +8,6 @@
     top: 0;
     left: 0;
     bottom: 0;
-    overflow: scroll;
-    padding-bottom: 40px;
 
     .tree_header {
         height: 90px;
@@ -18,12 +16,35 @@
         img {
             display: block;
             margin: 0 auto;
-        } 
+        }
+    }
+
+    .tree_scroller {
+      position: relative;
+      overflow: hidden;
+
+      .scroller-wrapper {
+        position: absolute;
+        right: 1px;
+        top: 0;
+        width: 5px;
+        background-color: transparent;
+
+        .scroller-thumb {
+          width: 5px;
+          background-color: rgba(125,125,125,0.4);
+          box-sizing: border-box;
+          border: 1px solid rgba(125,125,125,0.4);
+          border-radius: 2px;
+          position: absolute;
+          left: 0;
+        }
+      }
     }
 
     #si_Tree_Campaign_tree {
-        
-        padding: 0;
+
+        padding: 0 0 40px 0;
         color: @left-sidebar-text-color;
         text-transform: uppercase;
 
@@ -41,7 +62,7 @@
                 border: 1px solid @sidebar-light;
                 border-radius: 20px;
                 color: @sidebar-light;
-                
+
                 &:before {
                     content: '_';
                     position: absolute;
@@ -98,7 +119,7 @@
                         &.curSelectedNode {
                             border: none !important;
                             background: none !important;
-                            opacity: 1; 
+                            opacity: 1;
                         }
                         span:first-child {
                             display: none;
